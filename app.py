@@ -9,11 +9,11 @@ lnk="https://telegram-vid-stream-new.billhui8006u.repl.co/run.py"
 def run():
 	while True:
 		print("runnning file")
-		prg=r.get(lnk).text
-		print(prg)
-		with open('latest.py','w') as f:
-			f.write(prg)
-		os.system("python latest.py")
+		#prg=r.get(lnk).text
+		#print(prg)
+		#with open('latest.py','w') as f:
+		#	f.write(prg)
+		os.system("python run.py")
 		time.sleep(4)
 x = threading.Thread(target=run)
 x.start()
